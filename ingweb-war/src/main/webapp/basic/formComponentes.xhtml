@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding= "UTF-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+<h:head>
+    <meta charset="UTF-8"/>
+    <title>COmponentes del form</title>
+</h:head>
+
+<h:body>
+    <h2>Componentes del Form</h2>
+   <p>Se presentan varios componentes de un formulario</p>
+    <h:form id="formComponentes">
+
+        <h:inputText id="Texto" value="#{formComponentesController.texto}"/>
+        <br/>
+        <h:inputSecret id="password" value="#{formComponentesController.password}"/>
+        <br/>
+        <h:inputTextArea id="mensaje" value="#{formComponentesController.mensaje}"/>
+        <br/>
+        <h:inputHidden id="hidden" value="#{formComponentesController.hidden}"/>
+        <br/>
+        <h:selectBooleanChecBox id="checkbox" value="#{formComponentesController.check}"/>
+        <br/>
+        <h:selectOneMenu id="oneMenu" value="#{formComponentesController.oneMenu}">
+           <f:selectItems value="#{formComponentesController.listaOpciones}"/>
+        </h:selectOneMenu>
+        <br/>
+        <h:selectOneRadio id="oneRadio" value="#{formComponentesController.oneRadio}">
+            <f:selectItems value="#{formComponentesController.listaOpciones}"/>
+        </h:selectOneRadio>
+    </h:form>
+
+
+</h:body>
+
+
+</html>

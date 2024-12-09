@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding= "UTF-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+<h:head>
+    <title>Mi Página Jakarta Faces</title>
+</h:head>
+<h:body>
+    <h1>Hola Mundo desde Jakarta Faces</h1>
+    <h2>Segundo título</h2>
+    <p>Este es un texto en Jakarta Faces</p>
+    <p>Ejemplo de expresiones El</p>
+    <br/> ${5 + 5}
+    <br/> ${5 - 3}
+    <br/> ${5 * 4}
+    <br/> ${5 / 5}, ${5 div 6}
+    <br/> ${5 % 5}, ${5 mod 6}
+    <br/> ${"Hola" += "Mundo"}
+    <br/>
+
+    <p>Relaciones
+        <br/> ${5 == 5}
+    </p>
+
+
+    <br/>
+    <h:link value = "Hola mundo" outcome = "/basic/holamundo" >
+        <f:param name="nombre" value="Edric" />
+
+    </h:link>
+    <br/>
+    <h:link value="Calculadora" outcome="/basic/calculadora" />
+    <br/>
+    <h:link value="MensajesForms" outcome="/basic/mensajesForms" />
+
+    <br/>
+    <h:link value="Pagina Compuesta" outcome="/facelets/paginaCompuesta" />
+
+    <br/>
+    <h:form>
+        <h:commandButton value="FLujo ejemplo"
+                         action="flujoejemplo"/>
+    </h:form>
+
+
+</h:body>
+
+</html>
